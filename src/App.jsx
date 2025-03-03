@@ -3,6 +3,9 @@ import Home from "./pages/Home";
 import Layout from "./components/Layout";
 import PrayerTime from "./pages/PrayerTime";
 import Notification from "./pages/Notification";
+import Event from "./pages/Event";
+import HadithForm from "./pages/HadithForm";
+import User from "./pages/User";
 function App() {
 
   return (
@@ -12,6 +15,9 @@ function App() {
         <Route index element={<Home/>}/>
         <Route path="prayertime" element={<PrayerTime/>}/>
         <Route path="notification" element={<Notification/>}/>
+        <Route path="event" element={<Event/>}/>
+        <Route path="hadith" element={<HadithForm/>}/>
+        <Route path="user" element={<User/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
