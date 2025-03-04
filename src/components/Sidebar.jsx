@@ -1,6 +1,6 @@
 import { LuBox, LuCalendar, LuUser} from "react-icons/lu";
-import { FaSuitcase } from "react-icons/fa";
 import { MdOutlineAccessTimeFilled,MdNotifications } from "react-icons/md";
+import { GiBookmarklet } from "react-icons/gi";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
@@ -16,7 +16,7 @@ const Sidebar = () => {
     { id: 3, path: "/notification", name: "Notification", icon: MdNotifications },
     { id: 4, path: "/event", name: "Event", icon: LuCalendar },
     { id: 5, path: "/user", name: "User", icon: LuUser },
-    { id: 6, path: "/hadith", name: "Hadith Form", icon: FaSuitcase },
+    { id: 6, path: "/hadith", name: "Hadith", icon: GiBookmarklet },
   ];
   return (
     <div className="w-16 md:w-56 fixed left-0 top-0 z-10 h-screen border-r pt-8 px-4 bg-white">

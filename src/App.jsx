@@ -5,7 +5,7 @@ import PrayerTime from "./pages/PrayerTime";
 import Notification from "./pages/Notification";
 import Event from "./pages/Event";
 import HadithForm from "./pages/HadithForm";
-import User from "./pages/User";
+import RegisteredUsers from "./pages/RegisteredUsers";
 function App() {
 
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="notification" element={<Notification/>}/>
         <Route path="event" element={<Event/>}/>
         <Route path="hadith" element={<HadithForm/>}/>
-        <Route path="user" element={<User/>}/>
+        <Route path="user" element={<RegisteredUsers/>}/>
         </Route>
       </Routes>
     </BrowserRouter>
