@@ -6,6 +6,7 @@ import {
   FaUserCircle,
   FaEllipsisV,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header=()=> {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,7 +36,7 @@ const Header=()=> {
             <FaBars />
           </button> */}
           <h1 className=" text-2xl text-white text-nowrap font-semibold hidden sm:block">
-            Masjith <span className="text-lime-400">App</span>
+            Masjith <span className="text-lime-400">Admin</span>
           </h1>
           
         </div>
@@ -84,9 +85,11 @@ const Header=()=> {
       {isOpen && (
         <div className="absolute right-0 mt-2 w-48 bg-white text-black rounded-lg shadow-lg overflow-hidden z-50">
           <ul className="py-2">
+            <Link to={`login`}>
             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
-              Edit Profile
+              Login
             </li>
+            </Link>
             <li className="px-4 py-2 hover:bg-gray-100 cursor-pointer">
               Logout
             </li>

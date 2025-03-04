@@ -6,6 +6,7 @@ import Notification from "./pages/Notification";
 import Event from "./pages/Event";
 import HadithForm from "./pages/HadithForm";
 import RegisteredUsers from "./pages/RegisteredUsers";
+import LoginForm from "./pages/LoginForm";
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="hadith" element={<HadithForm/>}/>
         <Route path="user" element={<RegisteredUsers/>}/>
         </Route>
+        <Route path="login" element={<LoginForm/>}/>
       </Routes>
     </BrowserRouter>
   );
