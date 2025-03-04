@@ -4,13 +4,13 @@ import {
   FaBell,
   FaEnvelope,
   FaUserCircle,
-  FaEllipsisV,
+  // FaEllipsisV,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Header=()=> {
-  const [menuOpen, setMenuOpen] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [menuOpen, ] = useState(false);
+  // const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [ setUserImage] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -99,17 +99,17 @@ const Header=()=> {
     </div>
 
           {/* Mobile Menu Toggle */}
-          <button
+          {/* <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="text-white text-xl sm:hidden focus:outline-none"
           >
             <FaEllipsisV />
-          </button>
+          </button> */}
         </div>
       </div>
 
       {/* Mobile Menu */}
-      {mobileMenuOpen && (
+      {/* {mobileMenuOpen && (
         <div className="sm:hidden bg-green-900 rounded-md p-2 mt-2">
           <button className="flex items-center text-white w-full py-2">
             <FaEnvelope className="mr-2" /> Messages (4)
@@ -125,13 +125,13 @@ const Header=()=> {
             Profile
           </button>
         </div>
-      )}
+      )} */}
 
       {/* Dropdown Menu */}
       {menuOpen && (
         <div className="absolute right-4 bg-white shadow-md rounded-md mt-2 py-2 w-40">
           <button className="block px-4 py-2 text-gray-700 hover:bg-gray-200 w-full text-left">
-            Profile
+          Login
           </button>
           <button className="block px-4 py-2 text-gray-700 hover:bg-gray-200 w-full text-left">
             Log Out
