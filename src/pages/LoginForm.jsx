@@ -2,7 +2,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const LoginForm = () => {
   return (
-    <div className="flex items-center justify-center h-screen">
+    <div className="flex items-center justify-center min-h-screen">
       <div className="lg:w-[30%] md:w-[50%] sm:w-[70%] w-[90%] shadow-xl rounded-md text-center flex flex-col items-center justify-center p-10">
         <form className="w-full flex flex-col items-center">
           <p className="py-5 my-4 text-2xl font-bold">
