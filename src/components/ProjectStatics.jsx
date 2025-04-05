@@ -98,24 +98,24 @@ const ProjectStatics = () => {
       chart.render();
 
       return () => {
-        chart.destroy(); // Cleanup when component unmounts
+        chart.destroy(); 
       };
     }
   }, []);
 
   return (
-    <div className="w-full bg-white rounded-xl p-4 md:p-6">
+    <div className="w-full dashboard bg-white rounded-xl  p-4">
       <div className="flex justify-between">
         <div>
-          <h5 className="leading-none text-3xl font-bold text-gray-900 dark:text-white pb-2">
-            $12,423
+          <h5 className="leading-none text-3xl font-bold text-gray-900  pb-2">
+            12,423
           </h5>
           <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-            Sales this week
+            Total users this week
           </p>
         </div>
         <div className="flex items-center px-2.5 py-0.5 text-base font-semibold text-green-500 dark:text-green-500 text-center">
-          23%
+          80%
           <svg
             className="w-3 h-3 ms-1"
             aria-hidden="true"

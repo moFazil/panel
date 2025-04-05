@@ -1,20 +1,31 @@
-// import React from 'react'
+import { useState } from "react";
+import { Outlet } from "react-router-dom";
+import Sidebar from "./Sidebar";
+import Header from "./Header";
 
-import { Outlet } from "react-router-dom"
-import Sidebar from "./Sidebar"
-import Header from "./Header"
 const Layout = () => {
-  return (
-    <div>
-        <div className="flex">
-            <Sidebar/>
-            <div className="w-full ml-16 md:ml-56">
-              <Header/>
-            <Outlet/>
-            </div>
-        </div>
-    </div>
-  )
-}
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-export default Layout
+  const toggleSidebar = () => {
+    setIsSidebarOpen((prev) => !prev);
+  };
+
+  return (
+    <div className="flex">
+      {/* Sidebar */}
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+
+      {/* Main Content */}
+      <div className={`w-full layout transition-all duration-300 ${isSidebarOpen ? "sm:ml-56" : "sm:ml-0"}`}>
+        <div className="sm:ml-56 ml-0">
+        <Header toggleSidebar={toggleSidebar} />
+        </div>
+        <div className="sm:ml-56 ml-0">
+          <Outlet />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Layout;

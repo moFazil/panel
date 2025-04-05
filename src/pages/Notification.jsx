@@ -83,6 +83,11 @@ const Notification = () => {
             fontSize: "0.6rem",
             fontWeight: "bold",
             py: 1,
+            bgcolor: "black",  
+          color: "white",    
+          "&:hover": {
+            bgcolor: "#333", 
+          },
           }}
           onClick={handleUpdateNotification}
         >

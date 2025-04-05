@@ -31,7 +31,8 @@ const PrayerTime = () => {
   };
 
   return (
-    <Container
+    <div className="sm:px-0">
+     <Container
       maxWidth="sm"
       sx={{
         mt: 4,
@@ -157,24 +158,28 @@ const PrayerTime = () => {
             ))}
           </Grid>
         </Grid>
-
         <Button
-          variant="contained"
-          color="primary"
-          fullWidth
-          sx={{
-            mt: 2.5,
-            p: { xs: 1, sm: 1.2 },
-            fontSize: { xs: "0.9rem", sm: "1rem" },
-            fontWeight: "bold",
-            borderRadius: 2,
-          }}
-          onClick={updateTimes}
-        >
-          Update Times
-        </Button>
+        variant="contained"
+        fullWidth
+        sx={{
+          mt: 2.5,
+          p: { xs: 1, sm: 1.2 },
+          fontSize: { xs: "0.9rem", sm: "1rem" },
+          fontWeight: "bold",
+          borderRadius: 2,
+          bgcolor: "black",  
+          color: "white",    
+          "&:hover": {
+            bgcolor: "#333", 
+          },
+        }}
+        onClick={updateTimes}
+      >
+        Update Times
+      </Button>
       </Paper>
     </Container>
+    </div>
   );
 };
 

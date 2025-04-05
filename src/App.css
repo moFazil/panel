@@ -1,0 +1,120 @@
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: black; 
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  border-radius: 4px; 
+}
+
+
+
+.comingsoon {
+  animation: slideUp 1.5s ease-out;
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  background: black;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  text-align: center;
+}
+
+input[type="radio"] {
+  accent-color: black;
+}
+
+.come {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  animation: fadeIn 3s ease-in-out infinite alternate;
+}
+
+.comepara {
+  font-size: 22px;
+  margin: 10px 0;
+  animation: bounce 2s ease-in-out infinite alternate;
+}
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+.iconss {
+  font-size: 50px;
+  margin-top: 20px;
+}
+
+.iconsss {
+  margin: 0 15px;
+  animation: bounce 2s infinite alternate;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(100px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+@media (min-width: 300px) and (max-width:320px){
+  .layout{
+    /* margin-left: 80px !important; */
+    /* width: 240px !important; */
+  }
+}
+@media (min-width: 360px) and (max-width:370px){
+  .layout{
+    /* margin-left: 80px !important;
+    width: 280px !important; */
+  }
+}
+@media (min-width: 375px) and (max-width:380px){
+  .layout{
+    /* margin-left: 80px !important;
+    width: 300px !important; */
+  }
+}
+@media (min-width: 390px) and (max-width:395px){
+  .layout{
+    /* margin-left: 80px !important;
+    width: 305px !important; */
+  }
+}
+@media (min-width: 412px) and (max-width:413px){
+  .layout{
+    /* margin-left: 80px !important;
+    width: 328px !important; */
+  }
+}
+@media (min-width: 414px) and (max-width:420px){
+  .layout{
+    /* margin-left: 80px !important;
+    width: 330px !important; */
+  }
+}
+@media (min-width: 425px) and (max-width:500px){
+  .layout{
+    /* margin-left: 80px !important;
+    width: 345px !important; */
+  }
+}
+
